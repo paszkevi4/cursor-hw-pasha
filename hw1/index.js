@@ -13,7 +13,7 @@ let basicPrices = [
 	};
 
 	const ceiledTotal = (price, neededRound) => {
-		return Math.ceil(price/neededRound) * neededRound;
+		return Math.round(price/neededRound) * neededRound;
 	};
 
 	const averageCount = (arr) => {
