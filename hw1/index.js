@@ -70,3 +70,23 @@ console.log(
 Нова ціна: ${prices.newPrice}
 Чисий прибуток: ${prices.profit}
 `)
+
+const root = document.getElementById('root');
+const app = () => {
+    const render = () => {
+        root.innerHTML = `
+        	Максимальна ціна: ${prices.theBiggestOne} <br />
+			Мінімальна ціна: ${prices.theLowestOne} <br />
+			Вартість всіх товарів: ${prices.totalPrice} <br />
+			Округлена ціла частина: ${prices.totalPriceFloor} <br />
+			Сума товарів округлена до сотень: ${prices.totalPriceRounded} <br />
+			Чи є сума всіх товарів парним числом: ${ prices.isEven ? 'так' : 'ні' } <br />
+			Решта: ${prices.customerChange} <br />
+			Середнє значення цін: ${prices.average} <br />
+			Нова ціна: ${prices.newPrice} <br />
+			Чисий прибуток: ${prices.profit}
+		`;
+    };
+    render();
+}
+app();
