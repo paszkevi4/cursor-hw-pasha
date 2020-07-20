@@ -1,11 +1,11 @@
-const applePrice = 15.678;
-const fuelPrice = 123.965;
-const iceCreamPrice = 90.2345;
+const APPLE_PRICE = 15.678;
+const FUEL_PRICE = 123.965;
+const ICECREAM_PRICE = 90.2345;
 
 let basicPrices = [
-	applePrice,
-	fuelPrice,
-	iceCreamPrice,
+	APPLE_PRICE,
+	FUEL_PRICE,
+	ICECREAM_PRICE,
 ];
 
 	const totalFlooredCount = (firstPrise, secondPrice, thirdPrice) => {
@@ -13,7 +13,7 @@ let basicPrices = [
 	};
 
 	const ceiledTotal = (price, neededRound) => {
-		return Math.round(price/neededRound) * neededRound;
+		return Math.ceil(price/neededRound) * neededRound;
 	};
 
 	const averageCount = (arr) => {
@@ -68,7 +68,7 @@ console.log(
 Решта: ${prices.customerChange}
 Середнє значення цін: ${prices.average}
 Нова ціна: ${prices.newPrice}
-Чисий прибуток: ${prices.profit}
+Чистий прибуток: ${prices.profit}
 `)
 
 const root = document.getElementById('root');
@@ -84,7 +84,7 @@ const app = () => {
 			Решта: ${prices.customerChange} <br />
 			Середнє значення цін: ${prices.average} <br />
 			Нова ціна: ${prices.newPrice} <br />
-			Чисий прибуток: ${prices.profit}
+			Чистий прибуток: ${prices.profit}
 		`;
     };
     render();
