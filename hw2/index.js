@@ -17,10 +17,8 @@ const counter = () => {
 }
 
 const LOWER = numberSetter( "Від якого числа небхідно складати?" )
-const HIGHER = numberSetter( "До якого числа небхідно складати?" )
+let HIGHER = numberSetter( "До якого числа небхідно складати?" )
 const SKIP_EVEN = confirm( "Чи потрібно пропускати парні числа?" )
-
-console.log( counter() )
 
 const root = document.getElementById('root');
 const app = () => {
@@ -30,4 +28,12 @@ const app = () => {
     	дорівнює ${counter()}. </h3>
 	`;
 }
-app();
+
+const render = () => {
+	while ( HIGHER <= LOWER) {
+		HIGHER = numberSetter( `Число, до якого необхiдно рахувати має бути бiльше ${LOWER}. Змiнiть своє число:` )
+	}
+	console.log( counter() )
+	app();
+}
+render();
