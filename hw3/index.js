@@ -21,7 +21,6 @@ const degreeCounter = ( number = prompt('Значення, яке треба м�
 /* 3. Функція, яка форматує ім'я, роблячи першу букву великою. */
 const namePrettier = ( name = prompt('Введiть ваше iм\'я') ) => {
 	newName = name[0].toUpperCase() + name.slice(1).toLowerCase();
-	console.log('f3 worked')
 	return newName;
 }
 
