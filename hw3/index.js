@@ -326,4 +326,4 @@ document.getElementById("btn11").addEventListener("click", () => {
 	document.getElementById('card11').innerHTML = text
 } );
 
-setTimeout( () => { document.getElementById('card7').innerHTML = `For ${varsForTesting.currency} dollars you can get ${willGet.getSum()}`}, 500)
+setTimeout( () => { document.getElementById('card7').innerHTML = `For ${varsForTesting.currency} dollars you can get ${willGet.getSum()}`}, 1000)
